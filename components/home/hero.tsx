@@ -4,7 +4,7 @@ import { ArrowRight, CheckCircle } from "lucide-react"
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden bg-background py-20 md:py-32">
+    <section className="relative overflow-hidden bg-background py-16 md:py-24 lg:py-32">
       <div className="container mx-auto px-4">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
           {/* Text Content */}
@@ -13,12 +13,12 @@ export function Hero() {
               Limited to 20 Seats Per Month
             </div>
 
-            <h1 className="text-4xl font-bold leading-tight text-balance md:text-5xl lg:text-6xl">
+            <h1 className="text-3xl font-bold leading-tight text-balance md:text-4xl lg:text-5xl">
               Get One-on-One Training, <span className="text-primary">Real Tech Skills</span> and a Portfolio That
               Proves It
             </h1>
 
-            <p className="text-lg leading-relaxed text-foreground/80 md:text-xl text-pretty">
+            <p className="text-base leading-relaxed text-foreground/80 md:text-lg lg:text-xl text-pretty">
               Stop watching tutorials that lead nowhere. At Creit Tech Academy, you get personalized mentorship,
               hands-on projects, and a portfolio that opens doors—not just certificates that collect dust.
             </p>
@@ -56,9 +56,8 @@ export function Hero() {
             </div>
           </div>
 
-          {/* Hero Image */}
           <div className="relative animate-fade-in">
-            <div className="relative aspect-square overflow-hidden rounded-2xl bg-gradient-to-br from-primary/20 to-accent/20 shadow-2xl">
+            <div className="relative aspect-square overflow-hidden rounded-2xl bg-gradient-to-br from-primary/20 to-accent/20 shadow-2xl lg:aspect-[4/3]">
               <img
                 src="/diverse-students-learning-tech-with-mentor-in-mode.jpg"
                 alt="Students learning tech skills with personalized mentorship"
@@ -66,16 +65,16 @@ export function Hero() {
               />
             </div>
             {/* Floating Stats Cards */}
-            <div className="absolute -bottom-6 -left-6 rounded-xl bg-card p-4 shadow-lg animate-float">
-              <div className="text-3xl font-bold text-primary">95%</div>
-              <div className="text-sm text-muted-foreground">Job Placement Rate</div>
+            <div className="absolute -bottom-4 -left-4 md:-bottom-6 md:-left-6 rounded-xl bg-card p-3 md:p-4 shadow-lg animate-float border border-border">
+              <div className="text-2xl md:text-3xl font-bold text-primary">95%</div>
+              <div className="text-xs md:text-sm text-muted-foreground">Job Placement Rate</div>
             </div>
             <div
-              className="absolute -right-6 -top-6 rounded-xl bg-card p-4 shadow-lg animate-float"
+              className="absolute -right-4 -top-4 md:-right-6 md:-top-6 rounded-xl bg-card p-3 md:p-4 shadow-lg animate-float border border-border"
               style={{ animationDelay: "1s" }}
             >
-              <div className="text-3xl font-bold text-primary">500+</div>
-              <div className="text-sm text-muted-foreground">Graduates</div>
+              <div className="text-2xl md:text-3xl font-bold text-primary">500+</div>
+              <div className="text-xs md:text-sm text-muted-foreground">Graduates</div>
             </div>
           </div>
         </div>
