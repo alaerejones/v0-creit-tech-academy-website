@@ -14,8 +14,7 @@ export function Hero() {
             </div>
 
             <h1 className="text-3xl font-bold leading-tight text-balance md:text-4xl lg:text-5xl">
-              Get One-on-One Training, <span className="text-primary">Real Tech Skills</span> and a Portfolio That
-              Proves It
+              Acquire <span className="text-primary">Real Tech Skills</span> and a Portfolio That Proves It
             </h1>
 
             <p className="text-base leading-relaxed text-foreground/80 md:text-lg lg:text-xl text-pretty">
