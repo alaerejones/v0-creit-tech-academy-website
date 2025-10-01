@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -10,7 +11,16 @@ export function Footer() {
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           {/* About Section */}
           <div>
-            <h3 className="mb-4 text-xl font-bold">Creit Tech Academy</h3>
+            <Link href="/" className="mb-4 flex items-center gap-2">
+              <Image
+                src="/creit-logo-light.png"
+                alt="Creit Tech Academy Logo"
+                width={40}
+                height={40}
+                className="h-8 w-8 sm:h-10 sm:w-10"
+              />
+              <span className="text-lg font-bold text-[#FEF4F0] sm:text-xl">Creit Tech Academy</span>
+            </Link>
             <p className="mb-4 text-sm leading-relaxed opacity-90">
               Empowering African tech talent through personalized mentorship and hands-on training. Build real skills,
               create a portfolio, and launch your tech career.
@@ -144,9 +154,19 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="mt-8 border-t border-[#FEF4F0]/20 pt-8 text-center text-sm opacity-90">
-          <p>
-            &copy; {new Date().getFullYear()} Creit Tech Academy. All rights reserved. | A division of Creit
-            Technologies Limited
+          <p className="leading-relaxed">
+            &copy; {new Date().getFullYear()} Creit Tech Academy.
+            <br />
+            All rights reserved.
+            <br />A division of{" "}
+            <a
+              href="https://creittech.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary underline transition-opacity hover:opacity-80"
+            >
+              Creit Technologies Limited
+            </a>
           </p>
         </div>
       </div>
