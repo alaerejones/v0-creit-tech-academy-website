@@ -54,7 +54,7 @@ export function MeetTheTeam() {
               key={index}
               className="group overflow-hidden rounded-2xl border bg-card transition-shadow hover:shadow-lg"
             >
-              <div className="relative h-64 overflow-hidden">
+              <div className="relative aspect-[3/4] overflow-hidden">
                 <Image
                   src={member.image || "/placeholder.svg"}
                   alt={member.name}
